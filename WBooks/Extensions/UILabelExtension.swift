@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+extension UILabel {
+    
+    func setColorToWhite() {
+        textColor = .white
+    }
+    
+}
