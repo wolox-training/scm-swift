@@ -10,10 +10,15 @@
 		0CCF002A219208080061050C /* WolmoReactiveCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF0029219208080061050C /* WolmoReactiveCore.framework */; };
 		0CCF002C219208110061050C /* Wormholy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF002B219208110061050C /* Wormholy.framework */; };
 		0CCF002E219208180061050C /* WolmoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF002D219208180061050C /* WolmoCore.framework */; };
+		31010248228DC03F00CAE1A6 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3101023D228DC03F00CAE1A6 /* UILabelExtension.swift */; };
+		31010249228DC03F00CAE1A6 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31010240228DC03F00CAE1A6 /* MyCustomCell.xib */; };
+		3101024A228DC03F00CAE1A6 /* libraryTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31010241228DC03F00CAE1A6 /* libraryTable.xib */; };
+		3101024B228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010242228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift */; };
+		3101024C228DC03F00CAE1A6 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010243228DC03F00CAE1A6 /* MyCustomCell.swift */; };
+		3101024D228DC03F00CAE1A6 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31010245228DC03F00CAE1A6 /* LoginView.xib */; };
+		3101024E228DC03F00CAE1A6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010246228DC03F00CAE1A6 /* LoginView.swift */; };
+		3101024F228DC03F00CAE1A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010247228DC03F00CAE1A6 /* LoginViewController.swift */; };
 		31BFACFE228AFAFE00F32E35 /* ConfigurationFiles in Resources */ = {isa = PBXBuildFile; fileRef = 31BFACFD228AFAFE00F32E35 /* ConfigurationFiles */; };
-		31BFAD03228AFF2400F32E35 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31BFAD02228AFF2400F32E35 /* LoginView.xib */; };
-		31BFAD05228B262300F32E35 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFAD04228B262300F32E35 /* LoginView.swift */; };
-		31BFAD07228B372200F32E35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFAD06228B372200F32E35 /* LoginViewController.swift */; };
 		9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575041CB1B27500EA395E /* AppDelegate.swift */; };
 		9D1575071CB1B27500EA395E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575061CB1B27500EA395E /* ViewController.swift */; };
 		9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15750B1CB1B27500EA395E /* Assets.xcassets */; };
@@ -76,10 +81,15 @@
 		0CCF0029219208080061050C /* WolmoReactiveCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WolmoReactiveCore.framework; path = Carthage/Build/iOS/WolmoReactiveCore.framework; sourceTree = "<group>"; };
 		0CCF002B219208110061050C /* Wormholy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Wormholy.framework; path = Carthage/Build/iOS/Wormholy.framework; sourceTree = "<group>"; };
 		0CCF002D219208180061050C /* WolmoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WolmoCore.framework; path = Carthage/Build/iOS/WolmoCore.framework; sourceTree = "<group>"; };
+		3101023D228DC03F00CAE1A6 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		31010240228DC03F00CAE1A6 /* MyCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
+		31010241228DC03F00CAE1A6 /* libraryTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = libraryTable.xib; sourceTree = "<group>"; };
+		31010242228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		31010243228DC03F00CAE1A6 /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		31010245228DC03F00CAE1A6 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		31010246228DC03F00CAE1A6 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		31010247228DC03F00CAE1A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		31BFACFD228AFAFE00F32E35 /* ConfigurationFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ConfigurationFiles; sourceTree = "<group>"; };
-		31BFAD02228AFF2400F32E35 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		31BFAD04228B262300F32E35 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		31BFAD06228B372200F32E35 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D1575011CB1B27500EA395E /* WBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575041CB1B27500EA395E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D1575061CB1B27500EA395E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,29 +165,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31BFACFF228AFEB500F32E35 /* Views */ = {
+		3101023C228DC03F00CAE1A6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				31BFAD01228AFEFF00F32E35 /* Login */,
+				3101023D228DC03F00CAE1A6 /* UILabelExtension.swift */,
 			);
-			name = Views;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		31BFAD00228AFEC300F32E35 /* Models */ = {
+		3101023E228DC03F00CAE1A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3101023F228DC03F00CAE1A6 /* Test */,
+				31010244228DC03F00CAE1A6 /* Login */,
 			);
-			name = Models;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		31BFAD01228AFEFF00F32E35 /* Login */ = {
+		3101023F228DC03F00CAE1A6 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				31BFAD02228AFF2400F32E35 /* LoginView.xib */,
-				31BFAD04228B262300F32E35 /* LoginView.swift */,
-				31BFAD06228B372200F32E35 /* LoginViewController.swift */,
+				31010240228DC03F00CAE1A6 /* MyCustomCell.xib */,
+				31010241228DC03F00CAE1A6 /* libraryTable.xib */,
+				31010242228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift */,
+				31010243228DC03F00CAE1A6 /* MyCustomCell.swift */,
 			);
-			name = Login;
+			path = Test;
+			sourceTree = "<group>";
+		};
+		31010244228DC03F00CAE1A6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				31010245228DC03F00CAE1A6 /* LoginView.xib */,
+				31010246228DC03F00CAE1A6 /* LoginView.swift */,
+				31010247228DC03F00CAE1A6 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		9D1574F81CB1B27500EA395E = {
@@ -204,8 +227,8 @@
 		9D1575031CB1B27500EA395E /* WBooks */ = {
 			isa = PBXGroup;
 			children = (
-				31BFAD00228AFEC300F32E35 /* Models */,
-				31BFACFF228AFEB500F32E35 /* Views */,
+				3101023C228DC03F00CAE1A6 /* Extensions */,
+				3101023E228DC03F00CAE1A6 /* Views */,
 				31BFACFD228AFAFE00F32E35 /* ConfigurationFiles */,
 				E1530D9A1ED378F9002A9002 /* Services */,
 				9D1575041CB1B27500EA395E /* AppDelegate.swift */,
@@ -382,8 +405,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
+				31010249228DC03F00CAE1A6 /* MyCustomCell.xib in Resources */,
+				3101024A228DC03F00CAE1A6 /* libraryTable.xib in Resources */,
+				3101024D228DC03F00CAE1A6 /* LoginView.xib in Resources */,
 				31BFACFE228AFAFE00F32E35 /* ConfigurationFiles in Resources */,
-				31BFAD03228AFF2400F32E35 /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,11 +479,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31BFAD07228B372200F32E35 /* LoginViewController.swift in Sources */,
+				3101024F228DC03F00CAE1A6 /* LoginViewController.swift in Sources */,
 				9D1575071CB1B27500EA395E /* ViewController.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
+				3101024B228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift in Sources */,
+				3101024C228DC03F00CAE1A6 /* MyCustomCell.swift in Sources */,
+				31010248228DC03F00CAE1A6 /* UILabelExtension.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
-				31BFAD05228B262300F32E35 /* LoginView.swift in Sources */,
+				3101024E228DC03F00CAE1A6 /* LoginView.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
