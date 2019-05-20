@@ -23,7 +23,7 @@ class LibraryTableController: UIViewController, UITableViewDelegate, UITableView
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,9 +40,9 @@ class LibraryTableController: UIViewController, UITableViewDelegate, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib.init(nibName: "LibraryCell", bundle: nil)
-        self.tblUsers.register(nib, forCellReuseIdentifier: "LibraryCell")
+        tblUsers.register(cell: LibraryCell.self)
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

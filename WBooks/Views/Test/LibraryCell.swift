@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import WolmoCore
 
-class LibraryCell: UITableViewCell {
+class LibraryCell: UITableViewCell, NibLoadable {
     @IBOutlet weak var lblbookTtile: UILabel!
     @IBOutlet weak var lblAuthor: UILabel!
 
