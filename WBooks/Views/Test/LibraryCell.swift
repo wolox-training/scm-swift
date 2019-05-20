@@ -8,8 +8,12 @@
 
 import UIKit
 
-class MyCustomCell: UITableViewCell {
-
+class LibraryCell: UITableViewCell {
+    @IBOutlet weak var lblbookTtile: UILabel!
+    @IBOutlet weak var lblAuthor: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

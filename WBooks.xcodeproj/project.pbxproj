@@ -13,7 +13,7 @@
 		31010248228DC03F00CAE1A6 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3101023D228DC03F00CAE1A6 /* UILabelExtension.swift */; };
 		31010249228DC03F00CAE1A6 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31010240228DC03F00CAE1A6 /* MyCustomCell.xib */; };
 		3101024A228DC03F00CAE1A6 /* libraryTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31010241228DC03F00CAE1A6 /* libraryTable.xib */; };
-		3101024B228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010242228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift */; };
+		3101024B228DC03F00CAE1A6 /* libraryTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010242228DC03F00CAE1A6 /* libraryTableController.swift */; };
 		3101024C228DC03F00CAE1A6 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010243228DC03F00CAE1A6 /* MyCustomCell.swift */; };
 		3101024D228DC03F00CAE1A6 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31010245228DC03F00CAE1A6 /* LoginView.xib */; };
 		3101024E228DC03F00CAE1A6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010246228DC03F00CAE1A6 /* LoginView.swift */; };
@@ -84,7 +84,7 @@
 		3101023D228DC03F00CAE1A6 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		31010240228DC03F00CAE1A6 /* MyCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
 		31010241228DC03F00CAE1A6 /* libraryTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = libraryTable.xib; sourceTree = "<group>"; };
-		31010242228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		31010242228DC03F00CAE1A6 /* libraryTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libraryTableController.swift; sourceTree = "<group>"; };
 		31010243228DC03F00CAE1A6 /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 		31010245228DC03F00CAE1A6 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		31010246228DC03F00CAE1A6 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 			children = (
 				31010240228DC03F00CAE1A6 /* MyCustomCell.xib */,
 				31010241228DC03F00CAE1A6 /* libraryTable.xib */,
-				31010242228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift */,
+				31010242228DC03F00CAE1A6 /* libraryTableController.swift */,
 				31010243228DC03F00CAE1A6 /* MyCustomCell.swift */,
 			);
 			path = Test;
@@ -482,7 +482,7 @@
 				3101024F228DC03F00CAE1A6 /* LoginViewController.swift in Sources */,
 				9D1575071CB1B27500EA395E /* ViewController.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
-				3101024B228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift in Sources */,
+				3101024B228DC03F00CAE1A6 /* libraryTableController.swift in Sources */,
 				3101024C228DC03F00CAE1A6 /* MyCustomCell.swift in Sources */,
 				31010248228DC03F00CAE1A6 /* UILabelExtension.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,

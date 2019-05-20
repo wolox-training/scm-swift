@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         //Cambiado, mientras tanto: Deberia de ir ViewController
-        window?.rootViewController = LoginViewController()
+        window?.rootViewController = LibraryTableController()
         window?.makeKeyAndVisible()
         
         return true
