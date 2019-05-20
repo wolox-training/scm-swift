@@ -19,6 +19,14 @@
 		3101024E228DC03F00CAE1A6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010246228DC03F00CAE1A6 /* LoginView.swift */; };
 		3101024F228DC03F00CAE1A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010247228DC03F00CAE1A6 /* LoginViewController.swift */; };
 		31BFACFE228AFAFE00F32E35 /* ConfigurationFiles in Resources */ = {isa = PBXBuildFile; fileRef = 31BFACFD228AFAFE00F32E35 /* ConfigurationFiles */; };
+		31BFAD03228AFF2400F32E35 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31BFAD02228AFF2400F32E35 /* LoginView.xib */; };
+		31BFAD05228B262300F32E35 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFAD04228B262300F32E35 /* LoginView.swift */; };
+		31BFAD07228B372200F32E35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFAD06228B372200F32E35 /* LoginViewController.swift */; };
+		31FCA62A2293587400D4D18D /* LibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FCA6292293587400D4D18D /* LibraryView.xib */; };
+		31FCA62C229358B700D4D18D /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FCA62B229358B700D4D18D /* LibraryView.swift */; };
+		31FCA62E2293599300D4D18D /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FCA62D2293599300D4D18D /* LibraryViewController.swift */; };
+		31FCA63122935AF800D4D18D /* LibraryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FCA63022935AF800D4D18D /* LibraryCellView.swift */; };
+		31FCA63322935B6700D4D18D /* LibraryCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FCA63222935B6700D4D18D /* LibraryCellView.xib */; };
 		9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575041CB1B27500EA395E /* AppDelegate.swift */; };
 		9D1575071CB1B27500EA395E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575061CB1B27500EA395E /* ViewController.swift */; };
 		9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15750B1CB1B27500EA395E /* Assets.xcassets */; };
@@ -90,6 +98,14 @@
 		31010246228DC03F00CAE1A6 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		31010247228DC03F00CAE1A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		31BFACFD228AFAFE00F32E35 /* ConfigurationFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ConfigurationFiles; sourceTree = "<group>"; };
+		31BFAD02228AFF2400F32E35 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		31BFAD04228B262300F32E35 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		31BFAD06228B372200F32E35 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		31FCA6292293587400D4D18D /* LibraryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryView.xib; sourceTree = "<group>"; };
+		31FCA62B229358B700D4D18D /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		31FCA62D2293599300D4D18D /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		31FCA63022935AF800D4D18D /* LibraryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCellView.swift; sourceTree = "<group>"; };
+		31FCA63222935B6700D4D18D /* LibraryCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCellView.xib; sourceTree = "<group>"; };
 		9D1575011CB1B27500EA395E /* WBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575041CB1B27500EA395E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D1575061CB1B27500EA395E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,42 +181,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3101023C228DC03F00CAE1A6 /* Extensions */ = {
+		31FCA624229357AB00D4D18D /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				3101023D228DC03F00CAE1A6 /* UILabelExtension.swift */,
+				31FCA62F22935ADF00D4D18D /* LibraryCell */,
+				31FCA6292293587400D4D18D /* LibraryView.xib */,
+				31FCA62B229358B700D4D18D /* LibraryView.swift */,
+				31FCA62D2293599300D4D18D /* LibraryViewController.swift */,
 			);
-			path = Extensions;
+			path = Library;
 			sourceTree = "<group>";
 		};
-		3101023E228DC03F00CAE1A6 /* Views */ = {
+		31FCA625229357F700D4D18D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				3101023F228DC03F00CAE1A6 /* Test */,
 				31010244228DC03F00CAE1A6 /* Login */,
 			);
+			name = Models;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		31FCA6262293580D00D4D18D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31FCA6282293582000D4D18D /* Login */,
+				31FCA624229357AB00D4D18D /* Library */,
+			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		3101023F228DC03F00CAE1A6 /* Test */ = {
+		31FCA6282293582000D4D18D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				31010240228DC03F00CAE1A6 /* MyCustomCell.xib */,
-				31010241228DC03F00CAE1A6 /* libraryTable.xib */,
-				31010242228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift */,
-				31010243228DC03F00CAE1A6 /* MyCustomCell.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		31010244228DC03F00CAE1A6 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				31010245228DC03F00CAE1A6 /* LoginView.xib */,
-				31010246228DC03F00CAE1A6 /* LoginView.swift */,
-				31010247228DC03F00CAE1A6 /* LoginViewController.swift */,
+				31BFAD02228AFF2400F32E35 /* LoginView.xib */,
+				31BFAD04228B262300F32E35 /* LoginView.swift */,
+				31BFAD06228B372200F32E35 /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		31FCA62F22935ADF00D4D18D /* LibraryCell */ = {
+			isa = PBXGroup;
+			children = (
+				31FCA63022935AF800D4D18D /* LibraryCellView.swift */,
+				31FCA63222935B6700D4D18D /* LibraryCellView.xib */,
+			);
+			path = LibraryCell;
 			sourceTree = "<group>";
 		};
 		9D1574F81CB1B27500EA395E = {
@@ -227,8 +254,8 @@
 		9D1575031CB1B27500EA395E /* WBooks */ = {
 			isa = PBXGroup;
 			children = (
-				3101023C228DC03F00CAE1A6 /* Extensions */,
-				3101023E228DC03F00CAE1A6 /* Views */,
+				31FCA6262293580D00D4D18D /* Views */,
+				31FCA625229357F700D4D18D /* Models */,
 				31BFACFD228AFAFE00F32E35 /* ConfigurationFiles */,
 				E1530D9A1ED378F9002A9002 /* Services */,
 				9D1575041CB1B27500EA395E /* AppDelegate.swift */,
@@ -404,10 +431,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31FCA62A2293587400D4D18D /* LibraryView.xib in Resources */,
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
-				31010249228DC03F00CAE1A6 /* MyCustomCell.xib in Resources */,
-				3101024A228DC03F00CAE1A6 /* libraryTable.xib in Resources */,
-				3101024D228DC03F00CAE1A6 /* LoginView.xib in Resources */,
+				31FCA63322935B6700D4D18D /* LibraryCellView.xib in Resources */,
 				31BFACFE228AFAFE00F32E35 /* ConfigurationFiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +505,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3101024F228DC03F00CAE1A6 /* LoginViewController.swift in Sources */,
+				31FCA62C229358B700D4D18D /* LibraryView.swift in Sources */,
+				31BFAD07228B372200F32E35 /* LoginViewController.swift in Sources */,
+				31FCA62E2293599300D4D18D /* LibraryViewController.swift in Sources */,
+				31FCA63122935AF800D4D18D /* LibraryCellView.swift in Sources */,
 				9D1575071CB1B27500EA395E /* ViewController.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
 				3101024B228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift in Sources */,
