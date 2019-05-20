@@ -50,13 +50,19 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggE-ds-MUy" userLabel="WoloxSymbol">
-                    <rect key="frame" x="136.5" y="170" width="102" height="73"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="136.5" y="186" width="102" height="73"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="102" id="4Ry-SE-F6s"/>
                         <constraint firstAttribute="height" constant="73" id="Dyc-k0-qdF"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WBOOKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F50-gJ-MC4" userLabel="Wolox Title">
+                    <rect key="frame" x="59.5" y="268" width="256" height="64"/>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="55"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -64,13 +70,15 @@
                 <constraint firstItem="ggE-ds-MUy" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="BXd-Sz-1Gl"/>
                 <constraint firstItem="Bc2-00-vMb" firstAttribute="top" secondItem="so8-dO-vlm" secondAttribute="bottom" constant="200" id="C5h-xE-w5B"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ldW-Bx-8tI" secondAttribute="bottom" constant="0.14999999999999999" id="DKT-9d-Ekp"/>
+                <constraint firstItem="ggE-ds-MUy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.667" id="KB9-dZ-Q9O"/>
                 <constraint firstItem="Bc2-00-vMb" firstAttribute="centerX" secondItem="ldW-Bx-8tI" secondAttribute="centerX" id="Lxr-vO-Yqz"/>
                 <constraint firstItem="ldW-Bx-8tI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-0.14999999999999999" id="OVu-pq-Dao"/>
+                <constraint firstItem="F50-gJ-MC4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xi1-cd-PuY"/>
                 <constraint firstItem="so8-dO-vlm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="72.5" id="YxC-bT-c10"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bc2-00-vMb" secondAttribute="bottom" constant="40" id="jBe-zI-9iA"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="so8-dO-vlm" secondAttribute="trailing" constant="72.5" id="qQv-hh-IgB"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ldW-Bx-8tI" secondAttribute="trailing" id="rdp-ES-IxX"/>
-                <constraint firstItem="so8-dO-vlm" firstAttribute="top" secondItem="ggE-ds-MUy" secondAttribute="bottom" constant="120" id="xuC-Hm-77e"/>
+                <constraint firstItem="F50-gJ-MC4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.9" id="sek-pp-Uip"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
@@ -78,6 +86,7 @@
                 <outlet property="LoginFooter" destination="Bc2-00-vMb" id="SdC-jW-s1X"/>
                 <outlet property="WoloxSymbol" destination="ggE-ds-MUy" id="xQD-bt-fhg"/>
                 <outlet property="loginButton" destination="so8-dO-vlm" id="M2V-G6-nkU"/>
+                <outlet property="woloxTitleLabel" destination="F50-gJ-MC4" id="IuX-bP-Ftf"/>
             </connections>
             <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
         </view>

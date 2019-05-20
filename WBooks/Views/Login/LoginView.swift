@@ -38,7 +38,13 @@ class LoginView: UIView, NibLoadable {
         }
     }
     @IBOutlet weak var LogIn: UIButton!
-
+    
+    @IBOutlet weak var woloxTitleLabel: UILabel! {
+        didSet {
+            woloxTitleLabel.setColorToWhite()
+        }
+    }
+    
     
     //MARK: Action
     

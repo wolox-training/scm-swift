@@ -12,10 +12,10 @@ import WolmoCore
 
 final class LoginViewController: UIViewController {
     
-    //Carga el .xib asociado a la clase LoginView.
+    //Carga el .xib asociado a la clase LoginView. -> "nib" ~ "xib"
     private var _view: LoginView = LoginView.loadFromNib()!
     
-    //Ajuro hay que definir una initializacion.
+    //Ajuro hay que definir una inicializacion.
     init() {
         super.init(nibName: nil, bundle: nil)
         
