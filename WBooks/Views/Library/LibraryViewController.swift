@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import WolmoCore
 
 class LibraryViewController: UIViewController {
     
@@ -45,7 +46,7 @@ class LibraryViewController: UIViewController {
          porque cuando NavigationController muestra el child, usa la referncia Navigation Item es del child*/
         self.navigationItem.leftBarButtonItem = notificationsButton
         self.navigationItem.rightBarButtonItem = searchButton
-        self.navigationItem.title = "LIBRARY"
+        self.navigationItem.title = "NAVIGATION_BAR_TITLE".localized()
     }
 }
 

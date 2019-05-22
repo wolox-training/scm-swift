@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  WBooks
+
+  Created by Salvador Carnelutti on 22/05/2019.
+  Copyright © 2019 Wolox. All rights reserved.
+*/
+
+/* NAVIGATION_BAR */
+"NAVIGATION_BAR_TITLE" = "LIBRARY";
