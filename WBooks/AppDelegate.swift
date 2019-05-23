@@ -14,35 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        UINavigationBar.appearance().barTintColor = UIColor.gray
         if Environment.isTestTarget {
             return true
         }
 
-        /*
-         * Uncomment this and remove this comment once Rollbar service is enabled
-         * and the keys are properly configured in the configuration files.
-         *
-        RollbarService().initialize()
-         *
-         */
 
         NetworkActivityLogger.shared.level = .debug
         NetworkActivityLogger.shared.startLogging()
-
         window = UIWindow(frame: UIScreen.main.bounds)
-        //Cambiado, mientras tanto: Deberia de ir ViewController
-        let navigationController = UINavigationController(rootViewController: LibraryViewController())
-        //Navigation Bar attributes pueden ser cambiados desde aca en AppDelegate.
-        navigationController.navigationBar.barTintColor = .purple
-        navigationController.navigationBar.tintColor = .white
-        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
-        navigationController.navigationBar.titleTextAttributes = textAttributes
-
-
-
-        window?.rootViewController = navigationController
+        //Desde donde empieza la aplicacion.
+        window?.rootViewController = TabBarController()
         window?.makeKeyAndVisible()
 
         return true
