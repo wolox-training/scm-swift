@@ -43,9 +43,9 @@ class LibraryViewController: UIViewController {
         _view.libraryTable.register(cell: LibraryCellView.self)
         /*Las propiedades de Navigation Item son modificadas desde la instancia child del UINavigationController
          porque cuando NavigationController muestra el child, usa la referncia Navigation Item es del child*/
-        self.navigationItem.leftBarButtonItem = notificationsButton
-        self.navigationItem.rightBarButtonItem = searchButton
-        self.navigationItem.title = "LIBRARY"
+        navigationItem.leftBarButtonItem = notificationsButton
+        navigationItem.rightBarButtonItem = searchButton
+        navigationItem.title = "LIBRARY"
     }
 }
 
