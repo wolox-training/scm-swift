@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LibraryCellView" rowHeight="147" id="qe5-SU-fpo" customClass="LibraryCellView" customModule="WBooks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qe5-SU-fpo" id="hbD-yT-SHy">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="146.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7Q-B3-I8g" userLabel="Background View">
+                        <rect key="frame" x="20" y="10" width="335" height="110"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="116" translatesAutoresizingMaskIntoConstraints="NO" id="oKT-F8-Hjz">
+                                <rect key="frame" x="110" y="15" width="195" height="44.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pi-aI-LQc">
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OI7-s7-YS4">
+                                        <rect key="frame" x="0.0" y="24" width="195" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4pi-aI-LQc" secondAttribute="trailing" id="6w0-7D-Vt7"/>
+                                    <constraint firstItem="4pi-aI-LQc" firstAttribute="top" secondItem="oKT-F8-Hjz" secondAttribute="top" id="9VG-xo-MeE"/>
+                                    <constraint firstItem="OI7-s7-YS4" firstAttribute="top" secondItem="4pi-aI-LQc" secondAttribute="bottom" id="Rq1-FV-MXH"/>
+                                    <constraint firstAttribute="bottom" secondItem="OI7-s7-YS4" secondAttribute="bottom" id="UnS-2S-73I"/>
+                                    <constraint firstItem="4pi-aI-LQc" firstAttribute="leading" secondItem="oKT-F8-Hjz" secondAttribute="leading" id="Wgf-ZZ-vC3"/>
+                                    <constraint firstItem="OI7-s7-YS4" firstAttribute="leading" secondItem="oKT-F8-Hjz" secondAttribute="leading" id="YdS-A8-dP9"/>
+                                    <constraint firstAttribute="trailing" secondItem="OI7-s7-YS4" secondAttribute="trailing" id="f2I-FV-v90"/>
+                                    <constraint firstItem="OI7-s7-YS4" firstAttribute="top" secondItem="4pi-aI-LQc" secondAttribute="bottom" id="o7Z-9t-vsp"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_book1" translatesAutoresizingMaskIntoConstraints="NO" id="Yh2-rX-khc">
+                                <rect key="frame" x="30" y="15" width="60" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1D2-V1-lxw"/>
+                                    <constraint firstAttribute="width" constant="60" id="Gz6-dV-eZa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l6d-kW-Abg" firstAttribute="bottom" secondItem="Yh2-rX-khc" secondAttribute="bottom" constant="15" id="03q-W0-Az7"/>
+                            <constraint firstItem="oKT-F8-Hjz" firstAttribute="top" secondItem="Yh2-rX-khc" secondAttribute="top" id="AvA-Br-Wyy"/>
+                            <constraint firstItem="oKT-F8-Hjz" firstAttribute="leading" secondItem="Yh2-rX-khc" secondAttribute="trailing" constant="20" id="I3Z-ew-rgt"/>
+                            <constraint firstItem="Yh2-rX-khc" firstAttribute="leading" secondItem="l6d-kW-Abg" secondAttribute="leading" constant="30" id="O0X-Og-shz"/>
+                            <constraint firstItem="l6d-kW-Abg" firstAttribute="trailing" secondItem="oKT-F8-Hjz" secondAttribute="trailing" constant="30" id="YMn-Zn-DmO"/>
+                            <constraint firstItem="Yh2-rX-khc" firstAttribute="top" secondItem="l6d-kW-Abg" secondAttribute="top" constant="15" id="ZSC-Rf-xby"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l6d-kW-Abg"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="h7Q-B3-I8g" secondAttribute="bottom" constant="10" id="Hrm-PT-yQX"/>
+                    <constraint firstItem="h7Q-B3-I8g" firstAttribute="leading" secondItem="hbD-yT-SHy" secondAttribute="leading" constant="20" id="hPJ-Y8-SuT"/>
+                    <constraint firstAttribute="trailing" secondItem="h7Q-B3-I8g" secondAttribute="trailing" constant="20" id="lVd-cH-ESY"/>
+                    <constraint firstItem="h7Q-B3-I8g" firstAttribute="centerY" secondItem="hbD-yT-SHy" secondAttribute="centerY" id="nzM-By-oya"/>
+                    <constraint firstItem="h7Q-B3-I8g" firstAttribute="top" secondItem="hbD-yT-SHy" secondAttribute="top" constant="10" id="qa5-E2-2gb"/>
+                    <constraint firstItem="h7Q-B3-I8g" firstAttribute="centerX" secondItem="hbD-yT-SHy" secondAttribute="centerX" id="sWF-Ba-pVX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblAuthor" destination="OI7-s7-YS4" id="kH4-05-OeY"/>
+                <outlet property="lblBookTitle" destination="4pi-aI-LQc" id="Jnc-ne-r4K"/>
+                <outlet property="viewBackgroundContent" destination="h7Q-B3-I8g" id="Uqa-rZ-2ok"/>
+                <outlet property="viewContent" destination="hbD-yT-SHy" id="Kgs-fE-qnV"/>
+            </connections>
+            <point key="canvasLocation" x="13.6" y="57.121439280359823"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_book1" width="40" height="60"/>
+    </resources>
+</document>
