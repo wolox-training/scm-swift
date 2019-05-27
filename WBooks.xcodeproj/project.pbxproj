@@ -10,26 +10,28 @@
 		0CCF002A219208080061050C /* WolmoReactiveCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF0029219208080061050C /* WolmoReactiveCore.framework */; };
 		0CCF002C219208110061050C /* Wormholy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF002B219208110061050C /* Wormholy.framework */; };
 		0CCF002E219208180061050C /* WolmoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF002D219208180061050C /* WolmoCore.framework */; };
-		31010248228DC03F00CAE1A6 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3101023D228DC03F00CAE1A6 /* UILabelExtension.swift */; };
-		31010249228DC03F00CAE1A6 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31010240228DC03F00CAE1A6 /* MyCustomCell.xib */; };
-		3101024A228DC03F00CAE1A6 /* libraryTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31010241228DC03F00CAE1A6 /* libraryTable.xib */; };
-		3101024B228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010242228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift */; };
-		3101024C228DC03F00CAE1A6 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010243228DC03F00CAE1A6 /* MyCustomCell.swift */; };
-		3101024D228DC03F00CAE1A6 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31010245228DC03F00CAE1A6 /* LoginView.xib */; };
-		3101024E228DC03F00CAE1A6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010246228DC03F00CAE1A6 /* LoginView.swift */; };
-		3101024F228DC03F00CAE1A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31010247228DC03F00CAE1A6 /* LoginViewController.swift */; };
-		31BFACFE228AFAFE00F32E35 /* ConfigurationFiles in Resources */ = {isa = PBXBuildFile; fileRef = 31BFACFD228AFAFE00F32E35 /* ConfigurationFiles */; };
-		31BFAD03228AFF2400F32E35 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31BFAD02228AFF2400F32E35 /* LoginView.xib */; };
-		31BFAD05228B262300F32E35 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFAD04228B262300F32E35 /* LoginView.swift */; };
-		31BFAD07228B372200F32E35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFAD06228B372200F32E35 /* LoginViewController.swift */; };
-		31FCA62A2293587400D4D18D /* LibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FCA6292293587400D4D18D /* LibraryView.xib */; };
-		31FCA62C229358B700D4D18D /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FCA62B229358B700D4D18D /* LibraryView.swift */; };
-		31FCA62E2293599300D4D18D /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FCA62D2293599300D4D18D /* LibraryViewController.swift */; };
-		31FCA63122935AF800D4D18D /* LibraryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FCA63022935AF800D4D18D /* LibraryCellView.swift */; };
-		31FCA63322935B6700D4D18D /* LibraryCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FCA63222935B6700D4D18D /* LibraryCellView.xib */; };
-		9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575041CB1B27500EA395E /* AppDelegate.swift */; };
-		9D1575071CB1B27500EA395E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575061CB1B27500EA395E /* ViewController.swift */; };
-		9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15750B1CB1B27500EA395E /* Assets.xcassets */; };
+		315C0B3C229C90CE00137C96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B1C229C90CE00137C96 /* ViewController.swift */; };
+		315C0B3D229C90CE00137C96 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B1D229C90CE00137C96 /* Environment.swift */; };
+		315C0B3E229C90CE00137C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B1E229C90CE00137C96 /* Assets.xcassets */; };
+		315C0B3F229C90CE00137C96 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B21229C90CE00137C96 /* UILabelExtension.swift */; };
+		315C0B40229C90CE00137C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B22229C90CE00137C96 /* AppDelegate.swift */; };
+		315C0B41229C90CE00137C96 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B25229C90CE00137C96 /* MyCustomCell.xib */; };
+		315C0B42229C90CE00137C96 /* libraryTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B26229C90CE00137C96 /* libraryTable.xib */; };
+		315C0B43229C90CE00137C96 /* MyCustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B27229C90CE00137C96 /* MyCustomCellTableViewCell.swift */; };
+		315C0B44229C90CE00137C96 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B28229C90CE00137C96 /* MyCustomCell.swift */; };
+		315C0B45229C90CE00137C96 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B2A229C90CE00137C96 /* LibraryViewController.swift */; };
+		315C0B46229C90CE00137C96 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B2B229C90CE00137C96 /* LibraryView.swift */; };
+		315C0B47229C90CE00137C96 /* LibraryCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B2D229C90CE00137C96 /* LibraryCellView.xib */; };
+		315C0B48229C90CE00137C96 /* LibraryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B2E229C90CE00137C96 /* LibraryCellView.swift */; };
+		315C0B49229C90CE00137C96 /* LibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B2F229C90CE00137C96 /* LibraryView.xib */; };
+		315C0B4A229C90CE00137C96 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B31229C90CE00137C96 /* LoginView.xib */; };
+		315C0B4B229C90CE00137C96 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B32229C90CE00137C96 /* LoginView.swift */; };
+		315C0B4C229C90CE00137C96 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B33229C90CE00137C96 /* LoginViewController.swift */; };
+		315C0B4D229C90CE00137C96 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B35229C90CE00137C96 /* Debug.xcconfig */; };
+		315C0B4E229C90CE00137C96 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B36229C90CE00137C96 /* Release.xcconfig */; };
+		315C0B4F229C90CE00137C96 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B37229C90CE00137C96 /* Production.xcconfig */; };
+		315C0B50229C90CE00137C96 /* Alpha.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B38229C90CE00137C96 /* Alpha.xcconfig */; };
+		315C0B52229C90CE00137C96 /* RollbarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B3B229C90CE00137C96 /* RollbarService.swift */; };
 		9D15751A1CB1B27500EA395E /* WBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575191CB1B27500EA395E /* WBooksTests.swift */; };
 		9D1575251CB1B27500EA395E /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575241CB1B27500EA395E /* WBooksUITests.swift */; };
 		9D1F7A711CBED81900E20BE5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1F7A6F1CBED81900E20BE5 /* Nimble.framework */; };
@@ -46,10 +48,8 @@
 		B83388D721E93AAC00085E26 /* AlamofireNetworkActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83388CF21E93AAC00085E26 /* AlamofireNetworkActivityIndicator.framework */; };
 		B83388D821E93AAC00085E26 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83388D021E93AAC00085E26 /* Alamofire.framework */; };
 		B83388D921E93AAC00085E26 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83388D121E93AAC00085E26 /* Runes.framework */; };
-		CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB934DC1D21992100DF75C2 /* Environment.swift */; };
 		CED934891E8466A60017CF96 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED934871E8466A60017CF96 /* ReactiveSwift.framework */; };
 		E1530D991ED378F2002A9002 /* Rollbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1530D981ED378F2002A9002 /* Rollbar.framework */; };
-		E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1530D9B1ED37905002A9002 /* RollbarService.swift */; };
 		E1530D9E1ED382EA002A9002 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1530D9D1ED382EA002A9002 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,28 +89,30 @@
 		0CCF0029219208080061050C /* WolmoReactiveCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WolmoReactiveCore.framework; path = Carthage/Build/iOS/WolmoReactiveCore.framework; sourceTree = "<group>"; };
 		0CCF002B219208110061050C /* Wormholy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Wormholy.framework; path = Carthage/Build/iOS/Wormholy.framework; sourceTree = "<group>"; };
 		0CCF002D219208180061050C /* WolmoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WolmoCore.framework; path = Carthage/Build/iOS/WolmoCore.framework; sourceTree = "<group>"; };
-		3101023D228DC03F00CAE1A6 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
-		31010240228DC03F00CAE1A6 /* MyCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
-		31010241228DC03F00CAE1A6 /* libraryTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = libraryTable.xib; sourceTree = "<group>"; };
-		31010242228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCellTableViewCell.swift; sourceTree = "<group>"; };
-		31010243228DC03F00CAE1A6 /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
-		31010245228DC03F00CAE1A6 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		31010246228DC03F00CAE1A6 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		31010247228DC03F00CAE1A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		31BFACFD228AFAFE00F32E35 /* ConfigurationFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ConfigurationFiles; sourceTree = "<group>"; };
-		31BFAD02228AFF2400F32E35 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		31BFAD04228B262300F32E35 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		31BFAD06228B372200F32E35 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		31FCA6292293587400D4D18D /* LibraryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryView.xib; sourceTree = "<group>"; };
-		31FCA62B229358B700D4D18D /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
-		31FCA62D2293599300D4D18D /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
-		31FCA63022935AF800D4D18D /* LibraryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCellView.swift; sourceTree = "<group>"; };
-		31FCA63222935B6700D4D18D /* LibraryCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCellView.xib; sourceTree = "<group>"; };
+		315C0B1C229C90CE00137C96 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		315C0B1D229C90CE00137C96 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		315C0B1E229C90CE00137C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		315C0B21229C90CE00137C96 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		315C0B22229C90CE00137C96 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		315C0B25229C90CE00137C96 /* MyCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
+		315C0B26229C90CE00137C96 /* libraryTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = libraryTable.xib; sourceTree = "<group>"; };
+		315C0B27229C90CE00137C96 /* MyCustomCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		315C0B28229C90CE00137C96 /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		315C0B2A229C90CE00137C96 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		315C0B2B229C90CE00137C96 /* LibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		315C0B2D229C90CE00137C96 /* LibraryCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryCellView.xib; sourceTree = "<group>"; };
+		315C0B2E229C90CE00137C96 /* LibraryCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryCellView.swift; sourceTree = "<group>"; };
+		315C0B2F229C90CE00137C96 /* LibraryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryView.xib; sourceTree = "<group>"; };
+		315C0B31229C90CE00137C96 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		315C0B32229C90CE00137C96 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		315C0B33229C90CE00137C96 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		315C0B35229C90CE00137C96 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		315C0B36229C90CE00137C96 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		315C0B37229C90CE00137C96 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		315C0B38229C90CE00137C96 /* Alpha.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Alpha.xcconfig; sourceTree = "<group>"; };
+		315C0B39229C90CE00137C96 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315C0B3B229C90CE00137C96 /* RollbarService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollbarService.swift; sourceTree = "<group>"; };
 		9D1575011CB1B27500EA395E /* WBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D1575041CB1B27500EA395E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D1575061CB1B27500EA395E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9D15750B1CB1B27500EA395E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D1575101CB1B27500EA395E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D1575151CB1B27500EA395E /* WBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575191CB1B27500EA395E /* WBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBooksTests.swift; sourceTree = "<group>"; };
 		9D15751B1CB1B27500EA395E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,12 +131,10 @@
 		B83388CF21E93AAC00085E26 /* AlamofireNetworkActivityIndicator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireNetworkActivityIndicator.framework; path = Carthage/Build/iOS/AlamofireNetworkActivityIndicator.framework; sourceTree = "<group>"; };
 		B83388D021E93AAC00085E26 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B83388D121E93AAC00085E26 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
-		CEB934DC1D21992100DF75C2 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		CED934861E8466A60017CF96 /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Core.framework; path = Carthage/Build/iOS/Core.framework; sourceTree = "<group>"; };
 		CED934871E8466A60017CF96 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		CED9348A1E8466CE0017CF96 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = Carthage/Build/iOS/MBProgressHUD.framework; sourceTree = "<group>"; };
 		E1530D981ED378F2002A9002 /* Rollbar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rollbar.framework; path = Carthage/Build/iOS/Rollbar.framework; sourceTree = "<group>"; };
-		E1530D9B1ED37905002A9002 /* RollbarService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RollbarService.swift; path = Services/RollbarService.swift; sourceTree = "<group>"; };
 		E1530D9D1ED382EA002A9002 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -181,60 +181,113 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31FCA624229357AB00D4D18D /* Library */ = {
+		315C0B1B229C90CE00137C96 /* WBooks */ = {
 			isa = PBXGroup;
 			children = (
-				31FCA62F22935ADF00D4D18D /* LibraryCell */,
-				31FCA6292293587400D4D18D /* LibraryView.xib */,
-				31FCA62B229358B700D4D18D /* LibraryView.swift */,
-				31FCA62D2293599300D4D18D /* LibraryViewController.swift */,
+				315C0B1C229C90CE00137C96 /* ViewController.swift */,
+				315C0B1D229C90CE00137C96 /* Environment.swift */,
+				315C0B1E229C90CE00137C96 /* Assets.xcassets */,
+				315C0B1F229C90CE00137C96 /* Models */,
+				315C0B20229C90CE00137C96 /* Extensions */,
+				315C0B22229C90CE00137C96 /* AppDelegate.swift */,
+				315C0B23229C90CE00137C96 /* Views */,
+				315C0B34229C90CE00137C96 /* ConfigurationFiles */,
+				315C0B39229C90CE00137C96 /* Info.plist */,
+				315C0B3A229C90CE00137C96 /* Services */,
 			);
-			path = Library;
+			path = WBooks;
 			sourceTree = "<group>";
 		};
-		31FCA625229357F700D4D18D /* Models */ = {
+		315C0B1F229C90CE00137C96 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3101023F228DC03F00CAE1A6 /* Test */,
-				31010244228DC03F00CAE1A6 /* Login */,
 			);
-			name = Models;
-			path = "New Group";
+			path = Models;
 			sourceTree = "<group>";
 		};
-		31FCA6262293580D00D4D18D /* Views */ = {
+		315C0B20229C90CE00137C96 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				31FCA6282293582000D4D18D /* Login */,
-				31FCA624229357AB00D4D18D /* Library */,
+				315C0B21229C90CE00137C96 /* UILabelExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		315C0B23229C90CE00137C96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				315C0B24229C90CE00137C96 /* Test */,
+				315C0B29229C90CE00137C96 /* Library */,
+				315C0B30229C90CE00137C96 /* Login */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		31FCA6282293582000D4D18D /* Login */ = {
+		315C0B24229C90CE00137C96 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				31BFAD02228AFF2400F32E35 /* LoginView.xib */,
-				31BFAD04228B262300F32E35 /* LoginView.swift */,
-				31BFAD06228B372200F32E35 /* LoginViewController.swift */,
+				315C0B25229C90CE00137C96 /* MyCustomCell.xib */,
+				315C0B26229C90CE00137C96 /* libraryTable.xib */,
+				315C0B27229C90CE00137C96 /* MyCustomCellTableViewCell.swift */,
+				315C0B28229C90CE00137C96 /* MyCustomCell.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		315C0B29229C90CE00137C96 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				315C0B2A229C90CE00137C96 /* LibraryViewController.swift */,
+				315C0B2B229C90CE00137C96 /* LibraryView.swift */,
+				315C0B2C229C90CE00137C96 /* LibraryCell */,
+				315C0B2F229C90CE00137C96 /* LibraryView.xib */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		315C0B2C229C90CE00137C96 /* LibraryCell */ = {
+			isa = PBXGroup;
+			children = (
+				315C0B2D229C90CE00137C96 /* LibraryCellView.xib */,
+				315C0B2E229C90CE00137C96 /* LibraryCellView.swift */,
+			);
+			path = LibraryCell;
+			sourceTree = "<group>";
+		};
+		315C0B30229C90CE00137C96 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				315C0B31229C90CE00137C96 /* LoginView.xib */,
+				315C0B32229C90CE00137C96 /* LoginView.swift */,
+				315C0B33229C90CE00137C96 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		31FCA62F22935ADF00D4D18D /* LibraryCell */ = {
+		315C0B34229C90CE00137C96 /* ConfigurationFiles */ = {
 			isa = PBXGroup;
 			children = (
-				31FCA63022935AF800D4D18D /* LibraryCellView.swift */,
-				31FCA63222935B6700D4D18D /* LibraryCellView.xib */,
+				315C0B35229C90CE00137C96 /* Debug.xcconfig */,
+				315C0B36229C90CE00137C96 /* Release.xcconfig */,
+				315C0B37229C90CE00137C96 /* Production.xcconfig */,
+				315C0B38229C90CE00137C96 /* Alpha.xcconfig */,
 			);
-			path = LibraryCell;
+			path = ConfigurationFiles;
+			sourceTree = "<group>";
+		};
+		315C0B3A229C90CE00137C96 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				315C0B3B229C90CE00137C96 /* RollbarService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		9D1574F81CB1B27500EA395E = {
 			isa = PBXGroup;
 			children = (
 				9D6E405F1CB1BA21008CE558 /* Frameworks */,
-				9D1575031CB1B27500EA395E /* WBooks */,
+				315C0B1B229C90CE00137C96 /* WBooks */,
 				9D1575181CB1B27500EA395E /* WBooksTests */,
 				9D1575231CB1B27500EA395E /* WBooksUITests */,
 				9D1575021CB1B27500EA395E /* Products */,
@@ -249,22 +302,6 @@
 				9D1575201CB1B27500EA395E /* WBooksUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9D1575031CB1B27500EA395E /* WBooks */ = {
-			isa = PBXGroup;
-			children = (
-				31FCA6262293580D00D4D18D /* Views */,
-				31FCA625229357F700D4D18D /* Models */,
-				31BFACFD228AFAFE00F32E35 /* ConfigurationFiles */,
-				E1530D9A1ED378F9002A9002 /* Services */,
-				9D1575041CB1B27500EA395E /* AppDelegate.swift */,
-				9D1575061CB1B27500EA395E /* ViewController.swift */,
-				9D15750B1CB1B27500EA395E /* Assets.xcassets */,
-				9D1575101CB1B27500EA395E /* Info.plist */,
-				CEB934DC1D21992100DF75C2 /* Environment.swift */,
-			);
-			path = WBooks;
 			sourceTree = "<group>";
 		};
 		9D1575181CB1B27500EA395E /* WBooksTests */ = {
@@ -310,14 +347,6 @@
 				9D6E40561CB1B93A008CE558 /* Result.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E1530D9A1ED378F9002A9002 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				E1530D9B1ED37905002A9002 /* RollbarService.swift */,
-			);
-			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,10 +460,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31FCA62A2293587400D4D18D /* LibraryView.xib in Resources */,
-				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
-				31FCA63322935B6700D4D18D /* LibraryCellView.xib in Resources */,
-				31BFACFE228AFAFE00F32E35 /* ConfigurationFiles in Resources */,
+				315C0B4E229C90CE00137C96 /* Release.xcconfig in Resources */,
+				315C0B47229C90CE00137C96 /* LibraryCellView.xib in Resources */,
+				315C0B4F229C90CE00137C96 /* Production.xcconfig in Resources */,
+				315C0B42229C90CE00137C96 /* libraryTable.xib in Resources */,
+				315C0B4D229C90CE00137C96 /* Debug.xcconfig in Resources */,
+				315C0B4A229C90CE00137C96 /* LoginView.xib in Resources */,
+				315C0B41229C90CE00137C96 /* MyCustomCell.xib in Resources */,
+				315C0B3E229C90CE00137C96 /* Assets.xcassets in Resources */,
+				315C0B49229C90CE00137C96 /* LibraryView.xib in Resources */,
+				315C0B50229C90CE00137C96 /* Alpha.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,18 +540,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31FCA62C229358B700D4D18D /* LibraryView.swift in Sources */,
-				31BFAD07228B372200F32E35 /* LoginViewController.swift in Sources */,
-				31FCA62E2293599300D4D18D /* LibraryViewController.swift in Sources */,
-				31FCA63122935AF800D4D18D /* LibraryCellView.swift in Sources */,
-				9D1575071CB1B27500EA395E /* ViewController.swift in Sources */,
-				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
-				3101024B228DC03F00CAE1A6 /* MyCustomCellTableViewCell.swift in Sources */,
-				3101024C228DC03F00CAE1A6 /* MyCustomCell.swift in Sources */,
-				31010248228DC03F00CAE1A6 /* UILabelExtension.swift in Sources */,
-				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
-				3101024E228DC03F00CAE1A6 /* LoginView.swift in Sources */,
-				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
+				315C0B44229C90CE00137C96 /* MyCustomCell.swift in Sources */,
+				315C0B43229C90CE00137C96 /* MyCustomCellTableViewCell.swift in Sources */,
+				315C0B40229C90CE00137C96 /* AppDelegate.swift in Sources */,
+				315C0B48229C90CE00137C96 /* LibraryCellView.swift in Sources */,
+				315C0B3C229C90CE00137C96 /* ViewController.swift in Sources */,
+				315C0B46229C90CE00137C96 /* LibraryView.swift in Sources */,
+				315C0B52229C90CE00137C96 /* RollbarService.swift in Sources */,
+				315C0B45229C90CE00137C96 /* LibraryViewController.swift in Sources */,
+				315C0B3F229C90CE00137C96 /* UILabelExtension.swift in Sources */,
+				315C0B4B229C90CE00137C96 /* LoginView.swift in Sources */,
+				315C0B3D229C90CE00137C96 /* Environment.swift in Sources */,
+				315C0B4C229C90CE00137C96 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +663,7 @@
 		CE39E8771D1DAED00004FE95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -645,6 +681,7 @@
 		CE39E8781D1DAED00004FE95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WBooksUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.WBooksUITests;
@@ -729,6 +766,7 @@
 		CE39E87B1D1DAEE70004FE95 /* Alpha */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -746,6 +784,7 @@
 		CE39E87C1D1DAEE70004FE95 /* Alpha */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WBooksUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.WBooksUITests;
@@ -829,6 +868,7 @@
 		CE39E8831D1DAEF20004FE95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -846,6 +886,7 @@
 		CE39E8841D1DAEF20004FE95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WBooksUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.WBooksUITests;
@@ -928,6 +969,7 @@
 		E12DE1601F772A1E0072C2FF /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -945,6 +987,7 @@
 		E12DE1611F772A1E0072C2FF /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WBooksUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.WBooksUITests;
