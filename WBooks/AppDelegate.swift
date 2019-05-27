@@ -33,7 +33,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         //Cambiado, mientras tanto: Deberia de ir ViewController
-        window?.rootViewController = LibraryViewController()
+        let navigationController = UINavigationController(rootViewController: LibraryViewController())
+        //Navigation Bar attributes pueden ser cambiados desde aca en AppDelegate.
+        navigationController.navigationBar.barTintColor = .purple
+        navigationController.navigationBar.tintColor = .white
+        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        navigationController.navigationBar.titleTextAttributes = textAttributes
+ 
+        
+        
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
         return true
