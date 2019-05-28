@@ -34,6 +34,9 @@
 		31862E09229D7FF3003375CC /* NewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31862E04229D7FF3003375CC /* NewController.swift */; };
 		31862E0A229D7FF3003375CC /* WishListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31862E05229D7FF3003375CC /* WishListController.swift */; };
 		31862E0B229D7FF3003375CC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31862E06229D7FF3003375CC /* TabBarController.swift */; };
+		31A235DD229D885200882999 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A235DC229D885200882999 /* Book.swift */; };
+		31A235E0229D894A00882999 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A235DF229D894A00882999 /* LibraryViewModel.swift */; };
+		31A235E2229D8B1E00882999 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A235E1229D8B1E00882999 /* BookViewModel.swift */; };
 		9D15751A1CB1B27500EA395E /* WBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575191CB1B27500EA395E /* WBooksTests.swift */; };
 		9D1575251CB1B27500EA395E /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575241CB1B27500EA395E /* WBooksUITests.swift */; };
 		9D1F7A711CBED81900E20BE5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1F7A6F1CBED81900E20BE5 /* Nimble.framework */; };
@@ -121,6 +124,9 @@
 		31862E04229D7FF3003375CC /* NewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewController.swift; sourceTree = "<group>"; };
 		31862E05229D7FF3003375CC /* WishListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListController.swift; sourceTree = "<group>"; };
 		31862E06229D7FF3003375CC /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		31A235DC229D885200882999 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		31A235DF229D894A00882999 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		31A235E1229D8B1E00882999 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		9D1575011CB1B27500EA395E /* WBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575151CB1B27500EA395E /* WBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575191CB1B27500EA395E /* WBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBooksTests.swift; sourceTree = "<group>"; };
@@ -211,6 +217,8 @@
 		315C0B1F229C90CE00137C96 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				31A235DC229D885200882999 /* Book.swift */,
+				31A235E1229D8B1E00882999 /* BookViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,10 +256,11 @@
 		315C0B29229C90CE00137C96 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				315C0B2C229C90CE00137C96 /* LibraryCell */,
 				315C0B2A229C90CE00137C96 /* LibraryViewController.swift */,
 				315C0B2B229C90CE00137C96 /* LibraryView.swift */,
-				315C0B2C229C90CE00137C96 /* LibraryCell */,
 				315C0B2F229C90CE00137C96 /* LibraryView.xib */,
+				31A235DF229D894A00882999 /* LibraryViewModel.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -575,15 +584,18 @@
 				315C0B43229C90CE00137C96 /* MyCustomCellTableViewCell.swift in Sources */,
 				315C0B40229C90CE00137C96 /* AppDelegate.swift in Sources */,
 				315C0B48229C90CE00137C96 /* LibraryCellView.swift in Sources */,
+				31A235E2229D8B1E00882999 /* BookViewModel.swift in Sources */,
 				315C0B3C229C90CE00137C96 /* ViewController.swift in Sources */,
 				31862E0B229D7FF3003375CC /* TabBarController.swift in Sources */,
 				315C0B46229C90CE00137C96 /* LibraryView.swift in Sources */,
+				31A235E0229D894A00882999 /* LibraryViewModel.swift in Sources */,
 				315C0B52229C90CE00137C96 /* RollbarService.swift in Sources */,
 				315C0B45229C90CE00137C96 /* LibraryViewController.swift in Sources */,
 				315C0B3F229C90CE00137C96 /* UILabelExtension.swift in Sources */,
 				31862E08229D7FF3003375CC /* SettingsController.swift in Sources */,
 				315C0B4B229C90CE00137C96 /* LoginView.swift in Sources */,
 				315C0B3D229C90CE00137C96 /* Environment.swift in Sources */,
+				31A235DD229D885200882999 /* Book.swift in Sources */,
 				31862E09229D7FF3003375CC /* NewController.swift in Sources */,
 				31862E0A229D7FF3003375CC /* WishListController.swift in Sources */,
 				315C0B4C229C90CE00137C96 /* LoginViewController.swift in Sources */,

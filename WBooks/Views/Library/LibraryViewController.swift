@@ -11,16 +11,18 @@ import UIKit
 import WolmoCore
 
 class LibraryViewController: UIViewController {
-
-    var booksArray: Array = [["book": "A Little Bird Told me", "author": "Timothy Cross"], ["book": "When The Doves Dissapeared", "author": "Sofi Oksanen"],
-                              ["book": "The Best Book in the World", "author": "Peter Sjernstrom"], ["book": "Be Creative", "author": "Tony Alcazar"], ["book": "Redesign the Web", "author": "Liliana Castilla"]]
+    
     //UIImage "named" part is thejust the name of the image as a String and without the need of the extension.
     let notificationsButton = UIBarButtonItem(image: UIImage(named: "ic_notifications"), style: .plain, target: self, action: #selector(getter: UIDynamicBehavior.action))
     let searchButton = UIBarButtonItem(image: UIImage(named: "ic_search"), style: .plain, target: self, action: #selector(getter: UIDynamicBehavior.action))
 
     ///Carga el .xib asociado a la clase LibraryView y se lo asigna a _view.
     private var _view: LibraryView = LibraryView.loadFromNib()!
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    private var _viewModel: LibraryViewModel
+    
+    init(viewModel: LibraryViewModel) {
+        _viewModel = viewModel
+        
         //No carga nada porque luego a la vista del LibraryViewController le voy a asociar es la vista de LibraryView
         super.init(nibName: nil, bundle: nil)
     }
@@ -60,9 +62,9 @@ extension LibraryViewController: UITableViewDataSource, UITableViewDelegate {
         //.dequeue me devuelve una celda reutilizable (Las celdas en el telefono desaparecen y reaparecen segun como se encuentre la vista de la tabla)
         let cell = tableView.dequeue(cell: LibraryCellView.self)!
         //La funcion exige un return value de tipo UITableViewCell
-        let dict = booksArray[indexPath.row]
-        cell.lblBookTitle.text = dict["book"]
-        cell.lblAuthor.text = dict["author"]
+        let book = _viewModel.books[indexPath.row]
+        cell.lblBookTitle.text = book.title
+        cell.lblAuthor.text = book.author
         return cell
     }
 

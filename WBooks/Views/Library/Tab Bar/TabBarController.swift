@@ -16,7 +16,7 @@ class TabBarController: UITabBarController {
         // change tab bar color
         tabBar.barTintColor = .white
 
-        let library = UINavigationController(rootViewController: LibraryViewController())
+        let library = UINavigationController(rootViewController: LibraryViewController(viewModel: LibraryViewModel()))
         library.tabBarItem = UITabBarItem()
         library.tabBarItem.title = "Library"
         library.tabBarItem.image = UIImage(named: "ic_library")
