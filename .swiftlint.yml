@@ -1,0 +1,11 @@
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+  - type_body_length
+  - file_length
+excluded:
+  - Carthage
+  - WBooksTests
+  - WBooksUITests
+identifier_name:
+  min_length: 2

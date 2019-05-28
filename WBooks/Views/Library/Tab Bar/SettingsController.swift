@@ -17,7 +17,6 @@ class SettingsController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         
-        
         self.navigationItem.leftBarButtonItem = notificationsButton
         self.navigationItem.rightBarButtonItem = searchButton
         self.navigationItem.title = "NAVIGATION_BAR_TITLE".localized()
