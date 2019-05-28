@@ -19,7 +19,7 @@ import WolmoCore
  */
 class LoginView: UIView, NibLoadable {
     
-    //MARK: IBOutlet
+    // MARK: IBOutlet
     @IBOutlet weak var loginButton: UIView! {
         didSet {
             loginButton.layer.cornerRadius = loginButton.layer.frame.height / 2
@@ -28,16 +28,17 @@ class LoginView: UIView, NibLoadable {
         }
     }
     
-    @IBOutlet weak var LoginFooter: UILabel!
+    @IBOutlet weak var loginFooter: UILabel!
     
-    @IBOutlet weak var WoloxSymbol: UIView!{
+    @IBOutlet weak var woloxSymbol: UIView! {
         didSet {
-            WoloxSymbol.layer.cornerRadius = 25
-            WoloxSymbol.layer.borderWidth = 1.5
-            WoloxSymbol.layer.borderColor = UIColor.white.cgColor
+            woloxSymbol.layer.cornerRadius = 25
+            woloxSymbol.layer.borderWidth = 1.5
+            woloxSymbol.layer.borderColor = UIColor.white.cgColor
         }
     }
-    @IBOutlet weak var LogIn: UIButton!
+    
+    @IBOutlet weak var logIn: UIButton!
     
     @IBOutlet weak var woloxTitleLabel: UILabel! {
         didSet {
@@ -45,10 +46,8 @@ class LoginView: UIView, NibLoadable {
         }
     }
     
-    
-    //MARK: Action
-    
-    @IBAction func LogIn(_ sender: UIButton) {
+    // MARK: Action
+    @IBAction func logIn(_ sender: UIButton) {
         print("Button pressed")
     }
 }

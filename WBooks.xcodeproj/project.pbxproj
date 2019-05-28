@@ -27,11 +27,13 @@
 		315C0B4A229C90CE00137C96 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B31229C90CE00137C96 /* LoginView.xib */; };
 		315C0B4B229C90CE00137C96 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B32229C90CE00137C96 /* LoginView.swift */; };
 		315C0B4C229C90CE00137C96 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B33229C90CE00137C96 /* LoginViewController.swift */; };
-		315C0B4D229C90CE00137C96 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B35229C90CE00137C96 /* Debug.xcconfig */; };
-		315C0B4E229C90CE00137C96 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B36229C90CE00137C96 /* Release.xcconfig */; };
-		315C0B4F229C90CE00137C96 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B37229C90CE00137C96 /* Production.xcconfig */; };
-		315C0B50229C90CE00137C96 /* Alpha.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 315C0B38229C90CE00137C96 /* Alpha.xcconfig */; };
 		315C0B52229C90CE00137C96 /* RollbarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C0B3B229C90CE00137C96 /* RollbarService.swift */; };
+		31862E00229D7F75003375CC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31862DFD229D7F75003375CC /* Localizable.strings */; };
+		31862E07229D7FF3003375CC /* RentalsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31862E02229D7FF3003375CC /* RentalsController.swift */; };
+		31862E08229D7FF3003375CC /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31862E03229D7FF3003375CC /* SettingsController.swift */; };
+		31862E09229D7FF3003375CC /* NewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31862E04229D7FF3003375CC /* NewController.swift */; };
+		31862E0A229D7FF3003375CC /* WishListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31862E05229D7FF3003375CC /* WishListController.swift */; };
+		31862E0B229D7FF3003375CC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31862E06229D7FF3003375CC /* TabBarController.swift */; };
 		9D15751A1CB1B27500EA395E /* WBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575191CB1B27500EA395E /* WBooksTests.swift */; };
 		9D1575251CB1B27500EA395E /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575241CB1B27500EA395E /* WBooksUITests.swift */; };
 		9D1F7A711CBED81900E20BE5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1F7A6F1CBED81900E20BE5 /* Nimble.framework */; };
@@ -112,6 +114,13 @@
 		315C0B38229C90CE00137C96 /* Alpha.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Alpha.xcconfig; sourceTree = "<group>"; };
 		315C0B39229C90CE00137C96 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		315C0B3B229C90CE00137C96 /* RollbarService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollbarService.swift; sourceTree = "<group>"; };
+		31862DFE229D7F75003375CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		31862DFF229D7F75003375CC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		31862E02229D7FF3003375CC /* RentalsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentalsController.swift; sourceTree = "<group>"; };
+		31862E03229D7FF3003375CC /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		31862E04229D7FF3003375CC /* NewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewController.swift; sourceTree = "<group>"; };
+		31862E05229D7FF3003375CC /* WishListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListController.swift; sourceTree = "<group>"; };
+		31862E06229D7FF3003375CC /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9D1575011CB1B27500EA395E /* WBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575151CB1B27500EA395E /* WBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575191CB1B27500EA395E /* WBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBooksTests.swift; sourceTree = "<group>"; };
@@ -184,6 +193,7 @@
 		315C0B1B229C90CE00137C96 /* WBooks */ = {
 			isa = PBXGroup;
 			children = (
+				31862DFC229D7F75003375CC /* Localization */,
 				315C0B1C229C90CE00137C96 /* ViewController.swift */,
 				315C0B1D229C90CE00137C96 /* Environment.swift */,
 				315C0B1E229C90CE00137C96 /* Assets.xcassets */,
@@ -216,6 +226,7 @@
 		315C0B23229C90CE00137C96 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				31862E01229D7FF3003375CC /* Tab Bar */,
 				315C0B24229C90CE00137C96 /* Test */,
 				315C0B29229C90CE00137C96 /* Library */,
 				315C0B30229C90CE00137C96 /* Login */,
@@ -281,6 +292,27 @@
 				315C0B3B229C90CE00137C96 /* RollbarService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		31862DFC229D7F75003375CC /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				31862DFD229D7F75003375CC /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		31862E01229D7FF3003375CC /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				31862E02229D7FF3003375CC /* RentalsController.swift */,
+				31862E03229D7FF3003375CC /* SettingsController.swift */,
+				31862E04229D7FF3003375CC /* NewController.swift */,
+				31862E05229D7FF3003375CC /* WishListController.swift */,
+				31862E06229D7FF3003375CC /* TabBarController.swift */,
+			);
+			name = "Tab Bar";
+			path = "Library/Tab Bar";
 			sourceTree = "<group>";
 		};
 		9D1574F81CB1B27500EA395E = {
@@ -415,7 +447,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Wolox;
 				TargetAttributes = {
 					9D1575001CB1B27500EA395E = {
@@ -442,6 +474,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 9D1574F81CB1B27500EA395E;
 			productRefGroup = 9D1575021CB1B27500EA395E /* Products */;
@@ -460,16 +493,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				315C0B4E229C90CE00137C96 /* Release.xcconfig in Resources */,
 				315C0B47229C90CE00137C96 /* LibraryCellView.xib in Resources */,
-				315C0B4F229C90CE00137C96 /* Production.xcconfig in Resources */,
+				31862E00229D7F75003375CC /* Localizable.strings in Resources */,
 				315C0B42229C90CE00137C96 /* libraryTable.xib in Resources */,
-				315C0B4D229C90CE00137C96 /* Debug.xcconfig in Resources */,
 				315C0B4A229C90CE00137C96 /* LoginView.xib in Resources */,
 				315C0B41229C90CE00137C96 /* MyCustomCell.xib in Resources */,
 				315C0B3E229C90CE00137C96 /* Assets.xcassets in Resources */,
 				315C0B49229C90CE00137C96 /* LibraryView.xib in Resources */,
-				315C0B50229C90CE00137C96 /* Alpha.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +561,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -z \"$RUNNING_ON_CI\" ]\nthen\n    echo \"SwiftLint run script has been disabled\"\n    exit 0\nfi\n\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if [ ! -z \"$RUNNING_ON_CI\" ]\nthen\n    echo \"SwiftLint run script has been disabled\"\n    exit 0\nfi\n\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -541,16 +571,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				315C0B44229C90CE00137C96 /* MyCustomCell.swift in Sources */,
+				31862E07229D7FF3003375CC /* RentalsController.swift in Sources */,
 				315C0B43229C90CE00137C96 /* MyCustomCellTableViewCell.swift in Sources */,
 				315C0B40229C90CE00137C96 /* AppDelegate.swift in Sources */,
 				315C0B48229C90CE00137C96 /* LibraryCellView.swift in Sources */,
 				315C0B3C229C90CE00137C96 /* ViewController.swift in Sources */,
+				31862E0B229D7FF3003375CC /* TabBarController.swift in Sources */,
 				315C0B46229C90CE00137C96 /* LibraryView.swift in Sources */,
 				315C0B52229C90CE00137C96 /* RollbarService.swift in Sources */,
 				315C0B45229C90CE00137C96 /* LibraryViewController.swift in Sources */,
 				315C0B3F229C90CE00137C96 /* UILabelExtension.swift in Sources */,
+				31862E08229D7FF3003375CC /* SettingsController.swift in Sources */,
 				315C0B4B229C90CE00137C96 /* LoginView.swift in Sources */,
 				315C0B3D229C90CE00137C96 /* Environment.swift in Sources */,
+				31862E09229D7FF3003375CC /* NewController.swift in Sources */,
+				31862E0A229D7FF3003375CC /* WishListController.swift in Sources */,
 				315C0B4C229C90CE00137C96 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,11 +621,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		31862DFD229D7F75003375CC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31862DFE229D7F75003375CC /* en */,
+				31862DFF229D7F75003375CC /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		CE39E8751D1DAED00004FE95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -600,12 +648,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -695,6 +745,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -704,12 +755,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -798,6 +851,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -807,12 +861,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -900,6 +956,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -909,12 +966,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
