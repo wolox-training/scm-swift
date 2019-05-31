@@ -15,7 +15,7 @@ class LibraryView: UIView, NibLoadable {
     @IBOutlet weak var libraryTable: UITableView! {
         didSet {
             let invisionBackground = UIColor(red: 0.92, green: 0.96, blue: 0.98, alpha: 1.0)
-                libraryTable.layer.backgroundColor = invisionBackground.cgColor
+            libraryTable.layer.backgroundColor = invisionBackground.cgColor
         }
     }
 }

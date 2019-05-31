@@ -35,13 +35,3 @@ public struct Book: Codable {
                 image = try container.decode(String.self, forKey: .image)
     }
 }
-
-//struct Book {
-//    let author: String
-//    let title: String
-//
-//    init(author: String, title: String) {
-//        self.author = author
-//        self.title = title
-//    }
-//}
