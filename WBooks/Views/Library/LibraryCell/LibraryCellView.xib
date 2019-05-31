@@ -49,7 +49,7 @@
                                     <constraint firstItem="OI7-s7-YS4" firstAttribute="top" secondItem="4pi-aI-LQc" secondAttribute="bottom" id="o7Z-9t-vsp"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_book1" translatesAutoresizingMaskIntoConstraints="NO" id="Yh2-rX-khc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yh2-rX-khc">
                                 <rect key="frame" x="30" y="15" width="60" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="1D2-V1-lxw"/>
@@ -81,6 +81,7 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="imageBookCover" destination="Yh2-rX-khc" id="XS3-1P-zMW"/>
                 <outlet property="lblAuthor" destination="OI7-s7-YS4" id="kH4-05-OeY"/>
                 <outlet property="lblBookTitle" destination="4pi-aI-LQc" id="Jnc-ne-r4K"/>
                 <outlet property="viewBackgroundContent" destination="h7Q-B3-I8g" id="Uqa-rZ-2ok"/>
@@ -89,7 +90,4 @@
             <point key="canvasLocation" x="13.6" y="57.121439280359823"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="img_book1" width="40" height="60"/>
-    </resources>
 </document>

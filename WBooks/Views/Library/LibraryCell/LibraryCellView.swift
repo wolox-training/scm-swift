@@ -13,6 +13,7 @@ import WolmoCore
 class LibraryCellView: UITableViewCell, NibLoadable {
     @IBOutlet weak var lblBookTitle: UILabel!
     @IBOutlet weak var lblAuthor: UILabel!
+    @IBOutlet weak var imageBookCover: UIImageView!
     
     @IBOutlet weak var viewBackgroundContent: UIView! {
         didSet {
