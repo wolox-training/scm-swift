@@ -37,6 +37,7 @@
 		31A235DD229D885200882999 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A235DC229D885200882999 /* Book.swift */; };
 		31A235E0229D894A00882999 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A235DF229D894A00882999 /* LibraryViewModel.swift */; };
 		31A235E2229D8B1E00882999 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A235E1229D8B1E00882999 /* BookViewModel.swift */; };
+		31A235E4229DAEB600882999 /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A235E3229DAEB600882999 /* BookRepository.swift */; };
 		9D15751A1CB1B27500EA395E /* WBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575191CB1B27500EA395E /* WBooksTests.swift */; };
 		9D1575251CB1B27500EA395E /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575241CB1B27500EA395E /* WBooksUITests.swift */; };
 		9D1F7A711CBED81900E20BE5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1F7A6F1CBED81900E20BE5 /* Nimble.framework */; };
@@ -127,6 +128,7 @@
 		31A235DC229D885200882999 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		31A235DF229D894A00882999 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		31A235E1229D8B1E00882999 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		31A235E3229DAEB600882999 /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
 		9D1575011CB1B27500EA395E /* WBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575151CB1B27500EA395E /* WBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575191CB1B27500EA395E /* WBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBooksTests.swift; sourceTree = "<group>"; };
@@ -257,10 +259,11 @@
 			isa = PBXGroup;
 			children = (
 				315C0B2C229C90CE00137C96 /* LibraryCell */,
-				315C0B2A229C90CE00137C96 /* LibraryViewController.swift */,
-				315C0B2B229C90CE00137C96 /* LibraryView.swift */,
 				315C0B2F229C90CE00137C96 /* LibraryView.xib */,
+				315C0B2B229C90CE00137C96 /* LibraryView.swift */,
+				315C0B2A229C90CE00137C96 /* LibraryViewController.swift */,
 				31A235DF229D894A00882999 /* LibraryViewModel.swift */,
+				31A235E3229DAEB600882999 /* BookRepository.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				315C0B43229C90CE00137C96 /* MyCustomCellTableViewCell.swift in Sources */,
 				315C0B40229C90CE00137C96 /* AppDelegate.swift in Sources */,
 				315C0B48229C90CE00137C96 /* LibraryCellView.swift in Sources */,
+				31A235E4229DAEB600882999 /* BookRepository.swift in Sources */,
 				31A235E2229D8B1E00882999 /* BookViewModel.swift in Sources */,
 				315C0B3C229C90CE00137C96 /* ViewController.swift in Sources */,
 				31862E0B229D7FF3003375CC /* TabBarController.swift in Sources */,
