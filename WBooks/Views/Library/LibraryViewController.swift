@@ -15,7 +15,6 @@ class LibraryViewController: UIViewController {
     //UIImage "named" part is thejust the name of the image as a String and without the need of the extension.
     let notificationsButton = UIBarButtonItem(image: UIImage(named: "ic_notifications"), style: .plain, target: self, action: #selector(getter: UIDynamicBehavior.action))
     let searchButton = UIBarButtonItem(image: UIImage(named: "ic_search"), style: .plain, target: self, action: #selector(getter: UIDynamicBehavior.action))
-
     ///Carga el .xib asociado a la clase LibraryView y se lo asigna a _view.
     private var _view: LibraryView = LibraryView.loadFromNib()!
     private var _viewModel: LibraryViewModel
@@ -46,6 +45,8 @@ class LibraryViewController: UIViewController {
         _view.libraryTable.register(cell: LibraryCellView.self)
         /*Las propiedades de Navigation Item son modificadas desde la instancia child del UINavigationController
          porque cuando NavigationController muestra el child, usa la referncia Navigation Item es del child*/
+        notificationsButton.tintColor = UIColor.white
+        searchButton.tintColor = UIColor.white
         navigationItem.leftBarButtonItem = notificationsButton
         navigationItem.rightBarButtonItem = searchButton
         navigationItem.title = "LIBRARY"
