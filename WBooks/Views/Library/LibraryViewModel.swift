@@ -10,7 +10,7 @@ import Foundation
 
 class LibraryViewModel {
     
-    public var books: [Book] = []
+    public var books: [BookViewModel] = []
     
     init() {
     }

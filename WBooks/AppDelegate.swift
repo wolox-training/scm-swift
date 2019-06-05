@@ -28,8 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         //Desde donde empieza la aplicacion.
         window?.rootViewController = TabBarController()
+        //window?.rootViewController = UINavigationController(rootViewController: BookDetailViewController())
         window?.makeKeyAndVisible()
-
         return true
     }
 

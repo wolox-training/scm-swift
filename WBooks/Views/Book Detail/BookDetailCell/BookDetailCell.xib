@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookDetailCell" rowHeight="150" id="yqn-4a-P1f" customClass="BookDetailCell" customModule="WBooks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yqn-4a-P1f" id="5L8-hU-v3H">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pco-mz-1Vr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_user1" translatesAutoresizingMaskIntoConstraints="NO" id="hQF-7V-Ulz">
+                                <rect key="frame" x="14" y="22" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hQF-7V-Ulz" secondAttribute="height" multiplier="1:1" id="fdJ-tH-Bzk"/>
+                                    <constraint firstAttribute="height" constant="45" id="xEP-lb-Xrx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzL-CM-SQE">
+                                <rect key="frame" x="79" y="22" width="36.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lf2-5J-1iz">
+                                <rect key="frame" x="79" y="47.5" width="279" height="54.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jck-OF-Ksa">
+                                        <rect key="frame" x="0.0" y="0.0" width="279" height="669.5"/>
+                                        <mutableString key="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jck-OF-Ksa" firstAttribute="leading" secondItem="Lf2-5J-1iz" secondAttribute="leading" id="0S7-ex-G3H"/>
+                                    <constraint firstAttribute="trailing" secondItem="jck-OF-Ksa" secondAttribute="trailing" id="2Rg-5S-CdM"/>
+                                    <constraint firstItem="jck-OF-Ksa" firstAttribute="width" secondItem="Lf2-5J-1iz" secondAttribute="width" id="DMW-NU-uh8"/>
+                                    <constraint firstItem="jck-OF-Ksa" firstAttribute="height" secondItem="Lf2-5J-1iz" secondAttribute="height" priority="250" id="H2w-8N-jCh"/>
+                                    <constraint firstItem="jck-OF-Ksa" firstAttribute="top" secondItem="Lf2-5J-1iz" secondAttribute="top" id="OBd-So-pXM"/>
+                                    <constraint firstAttribute="bottom" secondItem="jck-OF-Ksa" secondAttribute="bottom" id="YbY-HS-oIn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Lf2-5J-1iz" secondAttribute="trailing" constant="17" id="0q9-tq-abN"/>
+                            <constraint firstItem="Lf2-5J-1iz" firstAttribute="centerY" secondItem="pco-mz-1Vr" secondAttribute="centerY" id="4Sd-d0-nlI"/>
+                            <constraint firstItem="Lf2-5J-1iz" firstAttribute="leading" secondItem="ZzL-CM-SQE" secondAttribute="leading" id="CTf-3W-YcX"/>
+                            <constraint firstItem="hQF-7V-Ulz" firstAttribute="leading" secondItem="pco-mz-1Vr" secondAttribute="leading" constant="14" id="Dio-7y-EC1"/>
+                            <constraint firstItem="ZzL-CM-SQE" firstAttribute="leading" secondItem="hQF-7V-Ulz" secondAttribute="trailing" constant="20" id="EL7-J4-zUO"/>
+                            <constraint firstItem="hQF-7V-Ulz" firstAttribute="top" secondItem="pco-mz-1Vr" secondAttribute="top" constant="22" id="G4Z-hV-So5"/>
+                            <constraint firstItem="Lf2-5J-1iz" firstAttribute="top" secondItem="ZzL-CM-SQE" secondAttribute="bottom" constant="5" id="aMq-90-kty"/>
+                            <constraint firstItem="ZzL-CM-SQE" firstAttribute="top" secondItem="hQF-7V-Ulz" secondAttribute="top" id="w6f-Fe-pfq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pco-mz-1Vr" firstAttribute="leading" secondItem="5L8-hU-v3H" secondAttribute="leading" id="0lC-99-CZA"/>
+                    <constraint firstAttribute="bottom" secondItem="pco-mz-1Vr" secondAttribute="bottom" id="Ild-Mw-rjP"/>
+                    <constraint firstItem="pco-mz-1Vr" firstAttribute="top" secondItem="5L8-hU-v3H" secondAttribute="top" id="Tjv-gB-CZL"/>
+                    <constraint firstAttribute="trailing" secondItem="pco-mz-1Vr" secondAttribute="trailing" id="mdO-2G-AjU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageUser" destination="hQF-7V-Ulz" id="dhX-aH-CAu"/>
+                <outlet property="lblComment" destination="jck-OF-Ksa" id="hGJ-kG-QmG"/>
+                <outlet property="lblUser" destination="ZzL-CM-SQE" id="FTz-Ek-weg"/>
+                <outlet property="scrollViewComment" destination="Lf2-5J-1iz" id="of1-kG-7NN"/>
+            </connections>
+            <point key="canvasLocation" x="109.59999999999999" y="123.23838080959521"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_user1" width="90" height="90"/>
+    </resources>
+</document>
