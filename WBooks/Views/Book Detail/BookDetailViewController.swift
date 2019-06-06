@@ -41,8 +41,6 @@ class BookDetailViewController: UIViewController {
             bookID: _viewModel.id,
             onSuccess: { [weak self] comments in
                 self?._bookDetailViewModel.comments = comments.map { CommentViewModel(comment: $0) }
-                print(comments)
-                //self?._viewModel.books = books.map { BookViewModel(book: $0) }
                 self?._view.detailTable?.reloadData()
             }, onError: { error in
                 print(error)
@@ -52,17 +50,18 @@ class BookDetailViewController: UIViewController {
 
 extension BookDetailViewController: UITableViewDataSource, UITableViewDelegate {
     func setCurrentBook() {
+        //Book specifications assignment.
         _view.lblBookTitle.text = _viewModel.title
         _view.lblStatus.text = _viewModel.status.capitalized
-
         _view.lblAuthor.text = _viewModel.author
         _view.lblYear.text = _viewModel.year
         _view.lblGenre.text = _viewModel.genre
+        
+        //Book image assignment.
         let imageUrl = URL(string: _viewModel.image)
         let data = try? Data(contentsOf: imageUrl ?? "http://wolox-training.s3.amazonaws.com/uploads/6942334-M.jpg")
         if let imageData = data {
-            let bookImage = UIImage(data: imageData)
-            _view.imgBookCover.image = bookImage
+            _view.imgBookCover.image = UIImage(data: imageData)
         }
     }
     
@@ -73,13 +72,16 @@ extension BookDetailViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeue(cell: BookDetailCell.self)!
         let commentView = _bookDetailViewModel.comments[indexPath.row]
+        
+        //Comment's cell components assignment.
         cell.lblUser.text = commentView.user.username
         cell.lblComment.text = commentView.content
         let imageUrl = URL(string: commentView.user.image)
+        
+        //User image assignment.
         let data = try? Data(contentsOf: imageUrl ?? "https://goo.gl/1PBWVM")
         if let imageData = data {
-            let bookImage = UIImage(data: imageData)
-            cell.imageUser.image = bookImage
+            cell.imageUser.image = UIImage(data: imageData)
         }
         return cell
     }

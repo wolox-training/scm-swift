@@ -79,9 +79,6 @@ extension LibraryViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Guarda el book instance del libro de la fila seleccionada.
         let book = _viewModel.books[indexPath.row]
-        //********let bookDetailViewModel = BookDetailViewModel(bookVM: book)
-        //********let bookDetailViewController = BookDetailViewController(viewModel: bookDetailViewModel)
-        //********let bookDetailViewController = BookDetailViewController(viewModel: book)
         let bookDetailViewController = BookDetailViewController(bookVM: book)
         // Cambia de controlador actual.
         navigationController?.pushViewController(bookDetailViewController, animated: true)
