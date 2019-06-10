@@ -29,4 +29,24 @@ extension BookViewModel {
     var title: String {
         return _book.title
     }
+    
+    var genre: String {
+        return _book.genre
+    }
+    
+    var year: String {
+        return _book.year
+    }
+    
+    var image: String {
+        return _book.image
+    }
+    
+    var id: Int {
+        return _book.id
+    }
+    
+    var status: String {
+        return _book.status
+    }
 }

@@ -12,9 +12,6 @@ import WolmoCore
 
 class LibraryViewController: UIViewController {
     
-    //UIImage "named" part is thejust the name of the image as a String and without the need of the extension.
-    let notificationsButton = UIBarButtonItem(image: UIImage(named: "ic_notifications"), style: .plain, target: self, action: #selector(getter: UIDynamicBehavior.action))
-    let searchButton = UIBarButtonItem(image: UIImage(named: "ic_search"), style: .plain, target: self, action: #selector(getter: UIDynamicBehavior.action))
     ///Carga el .xib asociado a la clase LibraryView y se lo asigna a _view.
     private var _view: LibraryView = LibraryView.loadFromNib()!
     private var _viewModel: LibraryViewModel
@@ -43,21 +40,14 @@ class LibraryViewController: UIViewController {
         _view.libraryTable.delegate = self
         //Asocia la clase LibraryCellView a la Table View
         _view.libraryTable.register(cell: LibraryCellView.self)
-        /*Las propiedades de Navigation Item son modificadas desde la instancia child del UINavigationController
-         porque cuando NavigationController muestra el child, usa la referncia Navigation Item es del child*/
-        notificationsButton.tintColor = UIColor.white
-        searchButton.tintColor = UIColor.white
-        navigationItem.leftBarButtonItem = notificationsButton
-        navigationItem.rightBarButtonItem = searchButton
-        navigationItem.title = "LIBRARY"
+
         _bookRepository.fetchBooks(
             onSuccess: { [weak self] books in
-                self?._viewModel.books = books
+                self?._viewModel.books = books.map { BookViewModel(book: $0) }
                 self?._view.libraryTable?.reloadData()
             }, onError: { error in
                 print(error)
             })
-        
     }
 }
 
@@ -75,7 +65,7 @@ extension LibraryViewController: UITableViewDataSource, UITableViewDelegate {
         let book = _viewModel.books[indexPath.row]
         cell.lblBookTitle.text = book.title
         cell.lblAuthor.text = book.author
-        
+        setNavigationBarItems()
         let imageUrl = URL(string: book.image)
         let data = try? Data(contentsOf: imageUrl ?? "http://wolox-training.s3.amazonaws.com/uploads/6942334-M.jpg")
         if let imageData = data {
@@ -83,5 +73,31 @@ extension LibraryViewController: UITableViewDataSource, UITableViewDelegate {
             cell.imageBookCover.image = bookImage
         }
         return cell
+    }
+    
+    //Cuando se seleccione alguna de las columas, redirigir de vista.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Guarda el book instance del libro de la fila seleccionada.
+        let book = _viewModel.books[indexPath.row]
+        let bookDetailViewController = BookDetailViewController(bookVM: book)
+        // Cambia de controlador actual.
+        navigationController?.pushViewController(bookDetailViewController, animated: true)
+    }
+    
+    func setNavigationBarItems() {
+        //UIImage "named" part is thejust the name of the image as a String and without the need of the extension.
+        let notificationsButton = UIBarButtonItem(image: UIImage(named: "ic_notifications"), style: .plain, target: self, action: #selector(getter: UIDynamicBehavior.action))
+        let searchButton = UIBarButtonItem(image: UIImage(named: "ic_search"), style: .plain, target: self, action: #selector(getter: UIDynamicBehavior.action))
+        /*Las propiedades de Navigation Item son modificadas desde la instancia child del UINavigationController
+         porque cuando NavigationController muestra el child, usa la referncia Navigation Item es del child*/
+        notificationsButton.tintColor = UIColor.white
+        searchButton.tintColor = UIColor.white
+        navigationItem.leftBarButtonItem = notificationsButton
+        navigationItem.rightBarButtonItem = searchButton
+        navigationItem.title = "LIBRARY"
+        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "ic_back")
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "ic_back")
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem?.tintColor = UIColor.white
     }
 }

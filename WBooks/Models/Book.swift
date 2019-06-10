@@ -15,6 +15,7 @@ public struct Book: Codable {
     let genre: String
     let year: String
     let image: String
+    let status: String
 
     enum BookKey: String, CodingKey {
         case id
@@ -23,6 +24,7 @@ public struct Book: Codable {
         case genre
         case year
         case image
+        case status
     }
     
     public init(from: Decoder) throws {
@@ -33,5 +35,6 @@ public struct Book: Codable {
                 genre = try container.decode(String.self, forKey: .genre)
                 year = try container.decode(String.self, forKey: .year)
                 image = try container.decode(String.self, forKey: .image)
+                status = try container.decode(String.self, forKey: .status)
     }
 }

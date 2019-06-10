@@ -29,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Desde donde empieza la aplicacion.
         window?.rootViewController = TabBarController()
         window?.makeKeyAndVisible()
-
         return true
     }
 
