@@ -12,6 +12,7 @@ import WolmoCore
 
 class BookDetailViewController: UIViewController {
     private var _view: BookDetailView = BookDetailView.loadFromNib()!
+    private var _bookComponentView: BookDetailComponent = BookDetailComponent.loadFromNib()!
     private var _commentRepository: CommentRepository = CommentRepository()
     private var _viewModel: BookViewModel
     private var _bookDetailViewModel: BookDetailViewModel
@@ -36,7 +37,6 @@ class BookDetailViewController: UIViewController {
         _view.detailTable.delegate = self
         _view.detailTable.register(cell: BookDetailCell.self)
         navigationItem.title = "BOOK DETAIL"
-        setCurrentBook()
         _commentRepository.fetchComments(
             bookID: _viewModel.id,
             onSuccess: { [weak self] comments in
@@ -49,21 +49,6 @@ class BookDetailViewController: UIViewController {
 }
 
 extension BookDetailViewController: UITableViewDataSource, UITableViewDelegate {
-    func setCurrentBook() {
-        //Book specifications assignment.
-        _view.lblBookTitle.text = _viewModel.title
-        _view.lblStatus.text = _viewModel.status.capitalized
-        _view.lblAuthor.text = _viewModel.author
-        _view.lblYear.text = _viewModel.year
-        _view.lblGenre.text = _viewModel.genre
-        
-        //Book image assignment.
-        let imageUrl = URL(string: _viewModel.image)
-        let data = try? Data(contentsOf: imageUrl ?? "http://wolox-training.s3.amazonaws.com/uploads/6942334-M.jpg")
-        if let imageData = data {
-            _view.imgBookCover.image = UIImage(data: imageData)
-        }
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return _bookDetailViewModel.comments.count
@@ -84,5 +69,25 @@ extension BookDetailViewController: UITableViewDataSource, UITableViewDelegate {
             cell.imageUser.image = UIImage(data: imageData)
         }
         return cell
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 270
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        _bookComponentView.lblBookTitle.text = _viewModel.title
+        _bookComponentView.lblStatus.text = _viewModel.status.capitalized
+        _bookComponentView.lblYear.text = _viewModel.year
+        _bookComponentView.lblGenre.text = _viewModel.genre
+        _bookComponentView.lblAuthor.text = _viewModel.author
+        let imageUrl = URL(string: _viewModel.image)
+        let data = try? Data(contentsOf: imageUrl ?? "http://wolox-training.s3.amazonaws.com/uploads/6942334-M.jpg")
+        if let imageData = data {
+            let bookImage = UIImage(data: imageData)
+            _bookComponentView.imgBookCover.image = bookImage
+        }
+        
+        return _bookComponentView
     }
 }

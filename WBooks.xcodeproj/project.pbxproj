@@ -10,6 +10,8 @@
 		0CCF002A219208080061050C /* WolmoReactiveCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF0029219208080061050C /* WolmoReactiveCore.framework */; };
 		0CCF002C219208110061050C /* Wormholy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF002B219208110061050C /* Wormholy.framework */; };
 		0CCF002E219208180061050C /* WolmoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF002D219208180061050C /* WolmoCore.framework */; };
+		310B131322AACF390024E708 /* BookDetailComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 310B131222AACF390024E708 /* BookDetailComponent.xib */; };
+		310B131522AAD3CD0024E708 /* BookDetailComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B131422AAD3CD0024E708 /* BookDetailComponent.swift */; };
 		310BD2AA22A58A5700068A2E /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310BD2A922A58A5700068A2E /* BookDetailView.swift */; };
 		310BD2AC22A58DAD00068A2E /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310BD2AB22A58DAD00068A2E /* BookDetailViewController.swift */; };
 		310BD2AF22A5B24700068A2E /* BookDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 310BD2AE22A5B24700068A2E /* BookDetailCell.xib */; };
@@ -105,6 +107,8 @@
 		0CCF0029219208080061050C /* WolmoReactiveCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WolmoReactiveCore.framework; path = Carthage/Build/iOS/WolmoReactiveCore.framework; sourceTree = "<group>"; };
 		0CCF002B219208110061050C /* Wormholy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Wormholy.framework; path = Carthage/Build/iOS/Wormholy.framework; sourceTree = "<group>"; };
 		0CCF002D219208180061050C /* WolmoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WolmoCore.framework; path = Carthage/Build/iOS/WolmoCore.framework; sourceTree = "<group>"; };
+		310B131222AACF390024E708 /* BookDetailComponent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookDetailComponent.xib; sourceTree = "<group>"; };
+		310B131422AAD3CD0024E708 /* BookDetailComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailComponent.swift; sourceTree = "<group>"; };
 		310BD2A922A58A5700068A2E /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		310BD2AB22A58DAD00068A2E /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		310BD2AE22A5B24700068A2E /* BookDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailCell.xib; sourceTree = "<group>"; };
@@ -232,7 +236,9 @@
 			children = (
 				310BD2AD22A5B22B00068A2E /* BookDetailCell */,
 				31131ABE22A1AD1B00774601 /* BookDetailView.xib */,
+				310B131222AACF390024E708 /* BookDetailComponent.xib */,
 				310BD2A922A58A5700068A2E /* BookDetailView.swift */,
+				310B131422AAD3CD0024E708 /* BookDetailComponent.swift */,
 				310BD2AB22A58DAD00068A2E /* BookDetailViewController.swift */,
 				310BD2B222A5CEC600068A2E /* CommentRepository.swift */,
 				310BD2B822A6C31200068A2E /* BookDetailViewModel.swift */,
@@ -556,6 +562,7 @@
 				31862E00229D7F75003375CC /* Localizable.strings in Resources */,
 				315C0B42229C90CE00137C96 /* libraryTable.xib in Resources */,
 				315C0B4A229C90CE00137C96 /* LoginView.xib in Resources */,
+				310B131322AACF390024E708 /* BookDetailComponent.xib in Resources */,
 				315C0B41229C90CE00137C96 /* MyCustomCell.xib in Resources */,
 				31131ABF22A1AD1B00774601 /* BookDetailView.xib in Resources */,
 				315C0B3E229C90CE00137C96 /* Assets.xcassets in Resources */,
@@ -635,6 +642,7 @@
 				315C0B43229C90CE00137C96 /* MyCustomCellTableViewCell.swift in Sources */,
 				315C0B40229C90CE00137C96 /* AppDelegate.swift in Sources */,
 				315C0B48229C90CE00137C96 /* LibraryCellView.swift in Sources */,
+				310B131522AAD3CD0024E708 /* BookDetailComponent.swift in Sources */,
 				310BD2B722A6C16B00068A2E /* User.swift in Sources */,
 				31F9FFA022A80BAD00B391AA /* CommentViewModel.swift in Sources */,
 				31A235E4229DAEB600882999 /* BookRepository.swift in Sources */,
