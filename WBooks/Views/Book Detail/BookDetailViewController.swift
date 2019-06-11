@@ -37,26 +37,21 @@ class BookDetailViewController: UIViewController {
         _view.detailTable.delegate = self
         _view.detailTable.register(cell: BookDetailCell.self)
         navigationItem.title = "BOOK DETAIL"
-        _commentRepository.fetchComments(
-            bookID: _viewModel.id,
-            onSuccess: { [weak self] comments in
-                self?._bookDetailViewModel.comments = comments.map { CommentViewModel(comment: $0) }
-                self?._view.detailTable?.reloadData()
-            }, onError: { error in
-                print(error)
-        })
+        
+        bindViewModel()
+        _bookDetailViewModel.getComments(bookId: _viewModel.id)
     }
 }
 
 extension BookDetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return _bookDetailViewModel.comments.count
+        return _bookDetailViewModel.comments.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeue(cell: BookDetailCell.self)!
-        let commentView = _bookDetailViewModel.comments[indexPath.row]
+        let commentView = _bookDetailViewModel.getComment(at: indexPath.row)!
         
         //Comment's cell components assignment.
         cell.lblUser.text = commentView.user.username
@@ -71,11 +66,10 @@ extension BookDetailViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 270
+        return (_view.detailTable.frame.width)*0.805
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
         _bookComponentView.lblBookTitle.text = _viewModel.title
         _bookComponentView.lblStatus.text = _viewModel.status.capitalized
         _bookComponentView.lblYear.text = _viewModel.year
@@ -84,10 +78,17 @@ extension BookDetailViewController: UITableViewDataSource, UITableViewDelegate {
         let imageUrl = URL(string: _viewModel.image)
         let data = try? Data(contentsOf: imageUrl ?? "http://wolox-training.s3.amazonaws.com/uploads/6942334-M.jpg")
         if let imageData = data {
-            let bookImage = UIImage(data: imageData)
-            _bookComponentView.imgBookCover.image = bookImage
+            _bookComponentView.imgBookCover.image = UIImage(data: imageData)
         }
-        
         return _bookComponentView
+    }
+}
+
+extension BookDetailViewController {
+    
+    func bindViewModel() {
+        _bookDetailViewModel.comments.producer.startWithResult { [weak self] _ in
+            self?._view.detailTable.reloadData()
+        }
     }
 }

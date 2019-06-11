@@ -112,7 +112,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="imgBookCover" destination="zYc-7L-IUb" id="qvQ-PI-aFe"/>
+                <outlet property="imgBookCover" destination="zYc-7L-IUb" id="6YS-fd-NcW"/>
                 <outlet property="lblAdd" destination="7fn-Ol-Xd3" id="OWk-mb-ZmB"/>
                 <outlet property="lblAuthor" destination="aff-rL-URv" id="iEM-iK-Jdr"/>
                 <outlet property="lblBookTitle" destination="Lux-5F-Obo" id="Cuv-Ft-ejL"/>
